@@ -19,6 +19,23 @@
         <h1>Weather Dashboard</h1>
     </header>
     
+    <div class="d-flex my-5">
+        <section class="col-3 bg-dark mx-5 mr-auto">
+            <form class="d-flex flex-column p-2 text-white">
+                <label for="citySearch">Search for a City</label>
+                <input type="text" placeholder="Austin" id="cityInput" class="form-control">
+                <button type="submit" class="btn btn-light mt-2">Search</button>
+            </form>>
+        </section>
+        <section class="col-8 bg-dark mx-5">
+            <div class="row" id="cityBox">
+                
+            </div>
+            <div class="row" id="forecastBox">
+
+            </div>
+        </section>
+    </div>
     
     <script src="./js/script.js"></script>
 </body>
