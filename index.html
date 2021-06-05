@@ -21,21 +21,61 @@
     
     <div class="d-flex my-5">
         <section class="col-3 bg-dark mx-5 mr-auto">
+            
             <form class="d-flex flex-column p-2 text-white">
                 <label for="citySearch">Search for a City</label>
-                <input type="text" placeholder="Austin" id="cityInput" class="form-control">
+                <input type="text" placeholder="Austin" id="cityInput" class="form-control" value="San Antonio">
                 <button type="submit" class="btn btn-light my-2" id="searchBtn">Search</button>
             </form>
-            <ul id="prevCities">
-
-            </ul>
-        </section>
-        <section class="col-8 bg-dark mx-5">
-            <div class="row" id="cityBox">
+            <section id="prevCities" class="d-flex flex-column p-2 text-white">
                 
+            </section>
+        </section>
+        <section class="col-8 mx-5">
+            <div class="row border d-flex flex-column p-2" id="cityBox">
+                <h1 id="cityName"><span><img id="firstIcon"></span></h1>
+                <p id="cityTemp"></p>
+                <p id="cityWind"></p>
+                <p id="cityHumidity"></p>
+                <p id="cityUV"></p>
             </div>
-            <div class="row" id="forecastBox">
-
+            <h2>5-Day Forecast:</h2>
+            <div class="row d-flex flex-row justify-content-around" id="forecastBox">
+                <section class="bg-dark text-white p-3" id="dayOne">
+                    <h3></h3>
+                    <img></img>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </section>
+                <section class="bg-dark text-white p-3" id="dayTwo">
+                    <h3></h3>
+                    <img></img>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </section>
+                <section class="bg-dark text-white p-3" id="dayThree">
+                    <h3></h3>
+                    <img></img>
+                    <p></p>
+                    <p></p>
+                    <p></p>                    
+                </section>
+                <section class="bg-dark text-white p-3" id="dayFour">
+                    <h3></h3>
+                    <img></img>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </section>
+                <section class="bg-dark text-white p-3" id="dayFive">
+                    <h3></h3>
+                    <img></img>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </section>
             </div>
         </section>
     </div>
