@@ -110,7 +110,7 @@ prevCities.addEventListener('click', function(event) {
 
     var requestURL = 'https://api.openweathermap.org/data/2.5/weather?q=' + element.textContent + '&units=imperial&appid=de4de53bbf62e4dc174f043136778a6f'
 
-    if (cities.includes(searchData.value) === false) {
+    if (cities.includes(searchData.value) === false && searchData.value != '') {
         (cities.push(searchData.value))
     }
 
